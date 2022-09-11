@@ -1,5 +1,5 @@
 import { GenerateDetailsParams } from "../../interface/laravel";
-import { readFileSync, write, writeFileSync } from 'fs';
+import { readFileSync, writeFileSync } from 'fs';
 import { RepositoryDefaultsInterface } from "../../interface/repository.defaults";
 import { defaultRepositoryFiles } from "../../configs/laravel/repository.defaults";
 

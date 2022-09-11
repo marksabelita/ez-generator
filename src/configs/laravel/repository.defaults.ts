@@ -26,7 +26,7 @@ export const defaultRepositoryFiles: RepositoryDefaultsInterface[] = [
         destinationPath: `${currentWorkingDirectory}/app/Providers`
     },
     {
-        name: "Model",
+        name: "",
         sourceFile: `${projectPath}/module/laravel/model/SampleModel.php`,
         destinationPath: `${currentWorkingDirectory}/app/Models`
     },

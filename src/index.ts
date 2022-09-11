@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-
 import * as yargs from 'yargs';
 import LaravelRepository from './actions/generate/laravel-repository';
 import { GenerateDetailsParams } from './interface/laravel';

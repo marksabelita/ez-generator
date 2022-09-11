@@ -1,0 +1,38 @@
+{
+  "name": "ez-generator",
+  "version": "1.0.1",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rimraf dist/",
+    "start": "ts-node src/index.ts",
+    "build": "npm run clean && npx tsc && npm run copy-files",
+    "dev": "tsc-watch  --onSuccess \"npm run copy-files\"",
+    "copy-files": "copyfiles -u 1 src/**/*.php dist/"
+  },
+  "bin": {
+    "ez": "./dist/index.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/ejs": "^2.6.0",
+    "@types/inquirer": "^0.0.43",
+    "@types/node": "^10.9.4",
+    "@types/shelljs": "^0.8.0",
+    "@types/yargs": "^11.1.1",
+    "copyfiles": "^2.4.1",
+    "rimraf": "^3.0.2",
+    "shx": "^0.3.2",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.3"
+  },
+  "dependencies": {
+    "concurrently": "^7.4.0",
+    "ejs": "^2.6.1",
+    "enquirer": "^2.3.6",
+    "inquirer": "^6.2.0",
+    "shelljs": "^0.8.2",
+    "tsc-watch": "^5.0.3",
+    "yargonaut": "^1.1.4",
+    "yargs": "^12.0.5"
+  }
+}

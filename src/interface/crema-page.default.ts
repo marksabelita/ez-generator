@@ -1,4 +1,4 @@
-export interface RepositoryDefaultsInterface {
+export interface CremaPageDefaultsInterface {
     name: string;
     sourceFile: string;
     destinationPath: string;

@@ -7,7 +7,7 @@
     "start": "ts-node src/index.ts",
     "build": "npm run clean && npx tsc && npm run copy-files",
     "dev": "tsc-watch  --onSuccess \"npm run copy-files\"",
-    "copy-files": "copyfiles -u 1 src/**/*.php dist/"
+    "copy-files": "shx cp -r src/templates dist"
   },
   "bin": {
     "ez": "./dist/index.js"
@@ -21,7 +21,7 @@
     "@types/yargs": "^11.1.1",
     "copyfiles": "^2.4.1",
     "rimraf": "^3.0.2",
-    "shx": "^0.3.2",
+    "shx": "^0.3.4",
     "ts-node": "^7.0.1",
     "typescript": "^3.0.3"
   },

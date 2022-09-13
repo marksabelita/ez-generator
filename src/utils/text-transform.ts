@@ -5,4 +5,7 @@ export const capitalizeFirstLetter = (string: string) => {
 export const capitalizeAllLetter = (string: string) => {
   return string.toUpperCase();
 }
-  
+ 
+export const smallAllLetter = (string: string) => {
+  return string.toLowerCase();
+}

@@ -179,7 +179,7 @@ const Lists = () => {
 				onClickAction={ onClickAction }
 				hasCreate={true}
 				onClickCreate={onClickCreate}
-				createLabel="Create company achievement"
+				createLabel="Create sample"
 			/>
 			{
 				isDeleteDialogOpen ? (
@@ -187,8 +187,8 @@ const Lists = () => {
 						open={isDeleteDialogOpen}
 						onDeny={() => onClickDeleteSample(false) }
 						onConfirm={() => onClickDeleteSample(true) }
-						title="Are you sure you want to delete this company achievement?"
-						dialogTitle="Delete company achievement"
+						title="Are you sure you want to delete this sample?"
+						dialogTitle="Delete sample"
 					/>
 				) : null
 			}

@@ -3,4 +3,5 @@ export interface GenerateDetailsParams {
     name: string;
     withBase?: boolean;
     path?: string;
+    root?: string;
 }

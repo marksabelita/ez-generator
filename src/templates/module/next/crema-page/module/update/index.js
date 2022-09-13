@@ -45,10 +45,10 @@ const Update = (props) => {
     }, [uuid])
 
     useEffect(() => {
-        if(SamplesDrawerOpen) {
+        if(samplesDrawerOpen) {
             reset({ project_type: '', description: '', year: moment().format("YYYY") });
         }
-    }, [SamplesDrawerOpen])
+    }, [samplesDrawerOpen])
 
     useEffect(async () => {
         dispatch({type: FETCH_START});
@@ -100,7 +100,7 @@ const Update = (props) => {
 		<>
             <Drawer
 				anchor='right'
-				open={SamplesDrawerOpen}
+				open={samplesDrawerOpen}
 				onClose={(event, reason) => { 
 					if(reason != 'backdropClick') {
 						setSamplesDrawerOpen(false);
@@ -117,7 +117,7 @@ const Update = (props) => {
                 }}   className={classes.sidebarHolder}  p={4}>
                     <form onSubmit={handleSubmit(onSubmit, onError)}>
                         <Box mt={10}>
-                            <h1> { !uuid  ? 'Create' : 'Update'} company achievements </h1>
+                            <h1> { !uuid  ? 'Create' : 'Update'} sample </h1>
                             <Box
                                 mt={8}
                                 padding={4}

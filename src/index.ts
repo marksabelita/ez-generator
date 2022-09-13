@@ -26,6 +26,11 @@ yargs.scriptName('ez')
         alias: 'p',
         demandOption: false,
         type: 'string'
+      },
+      'root': {
+        alias: 'r',
+        demandOption: false,
+        type: 'string'
       }
     })
     .demand(2)
@@ -67,7 +72,8 @@ yargs.scriptName('ez')
               name: parsed.name, 
               template: parsed.template,
               withBase: parsed.withBase,
-              path: parsed.path
+              path: parsed.path,
+              root: parsed.root
             }
             const cremaPage = new CremaPage();
             cremaPage.generate(requestsData);

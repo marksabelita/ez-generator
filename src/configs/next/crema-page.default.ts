@@ -12,42 +12,42 @@ export const defaultCremaFiles: CremaPageDefaultsInterface[] = [
         destinationPath: `${currentWorkingDirectory}/pages`,
     },
     {
-        type: "module-list",
+        type: "module",
         name: "index",
         sourceFile: `${projectPath}/templates/module/next/crema-page/module/list/index.js`,
         destinationPath: `${currentWorkingDirectory}/modules`,
         additionalPath: "lists"
     },
     {
-        type: "module-update",
+        type: "module",
         name: "index",
         sourceFile: `${projectPath}/templates/module/next/crema-page/module/update/index.js`,
         destinationPath: `${currentWorkingDirectory}/modules`,
         additionalPath: "update"
     },
     {
-        type: "module-update-form-date",
+        type: "module",
         name: "formdata",
         sourceFile: `${projectPath}/templates/module/next/crema-page/module/update/formdata.js`,
         destinationPath: `${currentWorkingDirectory}/modules`,
         additionalPath: "update"
     },
     {
-        type: "module-update-styles-date",
+        type: "module",
         name: "styles",
         sourceFile: `${projectPath}/templates/module/next/crema-page/module/update/styles.js`,
         destinationPath: `${currentWorkingDirectory}/modules`,
         additionalPath: "update"
     },
     {
-        type: "redux-actions",
+        type: "redux",
         name: "index",
         sourceFile: `${projectPath}/templates/module/next/crema-page/redux/actions/index.js`,
         destinationPath: `${currentWorkingDirectory}/redux/actions`,
         additionalPath: ""
     },
     {
-        type: "redux-reducer",
+        type: "redux",
         name: "index",
         sourceFile: `${projectPath}/templates/module/next/crema-page/redux/reducer/index.js`,
         destinationPath: `${currentWorkingDirectory}/redux/reducers`,

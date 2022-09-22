@@ -10,6 +10,7 @@ class Sample extends Model
     use HasFactory;
     public $table = '';
     protected $primaryKey = 'id';
+    public $timestamps = true;
 
     public $fillable = [
         'uuid',
